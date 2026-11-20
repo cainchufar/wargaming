@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: var(--font-sans);
+    background-color: #060a12;
+    color: #e2e8f0;
+  }
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek dark scrollbar for observation feeds */
+.tactical-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.tactical-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.tactical-scroll::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.25);
+  border-radius: 2px;
+}
+
+.tactical-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.45);
+}
+
+/* CesiumJS container & subtle credit positioning so Google 3D Tiles attribution stays clean and never collides with timeline */
+.cesium-viewer {
+  width: 100% !important;
+  height: 100% !important;
+  font-family: var(--font-sans) !important;
+}
+
+.cesium-viewer-bottom {
+  bottom: 76px !important;
+  left: 14px !important;
+  right: auto !important;
+  opacity: 0.72;
+  transition: opacity 0.2s ease;
+  pointer-events: auto;
+}
+
+.cesium-viewer-bottom:hover {
+  opacity: 1;
+}
+
+.cesium-credit-lightbox-overlay {
+  z-index: 60 !important;
+}
+
+.cesium-viewer-cesiumWidgetContainer,
+.cesium-widget,
+.cesium-widget canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

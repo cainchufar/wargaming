@@ -1,0 +1,8 @@
+{
+  "name": "台海聯合作戰推演系統",
+  "description": "基於 CesiumJS 與 Google Photorealistic 3D Tiles 構建的東亞第一島鏈數位雙生戰略模擬與陸海空多域動態推演觀測平台。",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

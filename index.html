@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>台海聯合作戰推演系統 — 3D 數位雙生戰略觀測</title>
+    <meta
+      name="description"
+      content="基於 CesiumJS 與 Google Photorealistic 3D Tiles 構建的東亞第一島鏈數位雙生戰略模擬與陸海空多域動態推演觀測平台。"
+    />
+    <meta property="og:title" content="台海聯合作戰推演系統 — 3D 數位雙生戰略觀測" />
+    <meta
+      property="og:description"
+      content="基於 CesiumJS 與 Google Photorealistic 3D Tiles 構建的東亞第一島鏈數位雙生戰略模擬與陸海空多域動態推演觀測平台。"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.CESIUM_BASE_URL = '/cesium/';
+    </script>
+  </head>
+  <body class="bg-[#060A12] text-slate-100 antialiased selection:bg-sky-500/30 selection:text-sky-100 overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
